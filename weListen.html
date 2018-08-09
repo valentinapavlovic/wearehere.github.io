@@ -16,36 +16,78 @@
       border-radius: 0;
     }
     /* Add a gray background color and some padding to the footer */
+    .row.content {height: 450px}
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: black;
+      height: 100%;
+    }
+    /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
-      padding: 25px;
+      padding: 15px;
     }
     </style>
   </head>
   <body>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">We care</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="finalproject.html">Home</a></li>
+            <li><a href="selfCare.html">Self Care</a></li>
+            <li><a href="helpingOthers.html">Helping Others</a></li>
+            <li class="active"><a href="mentalIllnesses.html">Mental Illnesses</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-          <h4><p class ="navbar-text">We Are Here</p></h4>
-        <ul class="nav navbar-nav">
-          <li><a href="finalproject.html">Home</a></li>
-          <li><a href="selfCare.html">Self Care</a></li>
-          <li><a href="helpingOthers.html">Helping Others</a></li>
-          <li><a href="mentalIllnesses.html">Mental Illnesses</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="crisisLines.html">Crisis Lines</a></li>
-        </ul>
-      </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h4> We Care</h4>
+      <p><a href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/mental-illness-treatments">Mental illness treatments
+</a></p>
+      <p><a href="https://www.sovhealth.com/treatment-programs/mental-health/">Treatment Centers</a></p>
+      <p><a href="http://www.healthfulchat.org/mental-health-chat-rooms.html">Chatrooms will all Illnesses</a></p>
     </div>
-  </nav>
-</body>
+    <div class="col-sm-8 text-left">
+      <h1>We Listen</h1>
+
+      <p>You are not crazy. Be kind and gentle with yourself. You are doing the best you can. You will survive this experience. And when it’s over, I will be here and so will you.</p>
+      <h2>You’re not alone in this</h2>
+      <p>Feeling isolated in your suffering is one of the worst feelings to endure when you have a mental illness. We are willing to walk with you through the experience rather than just pay you lip-service can be life-changing</p>
+      <h3>You are important to me. You matter to me and so do your feelings</h3>
+      <p>We already validate how you are feeling. Dont let anyon shame, question, or try to analyze it.</p>
+      <h4>This does not define you</h4>
+      <p> Your mental health struggle does not define who you are or what makes up your identity.</p>
+      <h5>You did not ask for this or bring this on yourself</h5>
+      <p>You did not ask for PTSD. Those that I know who are depressed or struggle with eating disorders or OCD did not ask for it. You are a product of many things, most of them being things you can not or could not control. And that is not you fault</p>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+  <p>Footer Text</p>
+  </footer>
+
+  </body>
+  </html>
+
 
