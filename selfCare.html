@@ -15,30 +15,23 @@ background-color: normal;
 
 
   <style>
-
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
-      background-color: pink;
+      background-color: lightBlue;
       height: 100%;
     }
-
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
-      color: lavender;
       padding: 15px;
     }
-
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -51,29 +44,29 @@ background-color: normal;
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <h4><p class ="navbar-text">We Are Here</p></h4>
+        <ul class="nav navbar-nav">
+           <li><a href="finalproject.html">Home</a></li>
+          <li class="active"><a href="selfCare.html">Self Care</a></li>
+          <li><a href="helpingOthers.html">Helping Others</a></li>
+          <li><a href="mentalIllnesses.html">Mental Illnesses</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="crisisLines.html">Crisis Lines</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 <div class="container-fluid text-center">
   <div class="row content">
