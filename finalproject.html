@@ -3,8 +3,6 @@
   <link rel = "javascript" type = "text/js" href = "finalproject.js">
   <link rel = "stylesheet" type = "text/css" href = "finalproject.css">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
   <title>We Are Here</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,101 +36,44 @@
       padding: 0;
   }
   }
-  body {
-    font-family: 'Bad Script';font-size: 22px;
-}
-/* Popup container - can be anything you want */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
   </style>
 </head>
-<body style="text-align:center">
-
-<h2>Popup</h2>
-
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
-</div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
-</script>
-
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">We Are Here</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-        <h4><p class ="navbar-text">We Are Here</p></h4>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">What We Do<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="weListen.html">We Listen</a></li>
+            <li><a href="weInform.html">We Inform</a></li>
+            <li><a href="weHelp.html">We Help</a></li>
+          </ul>
+        </li>
+         </ul>
+        <ul class="nav navbar-nav">
         <li><a href="selfCare.html">Self Care</a></li>
         <li><a href="helpingOthers.html">Helping Others</a></li>
-        <li><a href="mentalIllnesses.html">Mental Illnesses</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mental Illnesses <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+         <li><a href="mentalIllnesses.html">General Information</a></li>
+         <li><a href="depression.html">Depression</a></li>
+         <li><a href="anxiety.html">Anxiety</a></li>
+         <li><a href="addiction.html">Addiction</a></li>
+         <li><a href="eatingDisorders.html">Eating Disorders</a></li>
+         <li><a href="other.html">Other</a></li>
+       </ul>
+     </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="crisisLines.html">Crisis Lines</a></li>
@@ -140,6 +81,7 @@ function myFunction() {
     </div>
   </div>
 </nav>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -181,15 +123,15 @@ function myFunction() {
   <div class="row">
     <div class="col-sm-4">
       <img src="https://data.whicdn.com/images/269682593/superthumb.jpg?t=1481411052" class="img-responsive" style="width:100%" alt="Person sitting in front of a window in the dark.">
-      <a href="weListen.html" class="btn btn-lg btn-info btn-block" role="button">We Listen</a>
+      <a href="weListen.html" class="btn btn-lg btn-block" role="button" style="background-color:#d1c4e9; color:white;">We Listen</a>
     </div>
     <div class="col-sm-4">
       <img src="https://i.pinimg.com/originals/4f/cc/a0/4fcca00a8a7b452a4da56991a2132615.jpg" class="img-responsive" style="width:100%" alt="Flowers arranged on a light pink background.">
-      <a href="weInform.html" class="btn btn-lg btn-info btn-block" role="button">We Inform</a>
+      <a href="weInform.html" class="btn-lg btn-warning btn-block" role="button" style="background-color:#f8bbd0; color:white;">We Inform</a>
     </div>
     <div class="col-sm-4">
       <img src="https://s13.favim.com/orig/160528/aesthetic-aesthetics-art-city-Favim.com-4351673.jpeg" class="img-responsive" style="width:100%" alt="Pastel pixel art of a city alleyway.">
-        <a href="weHelp.html" class="btn btn-lg btn-info btn-block" role="button">We Help</a>
+        <a href="weHelp.html" class="btn btn-lg btn-info btn-block" role="button" style="background-color:#90caf9; color:white;">We Help</a>
     </div>
   </div>
 </div><br>
@@ -200,4 +142,3 @@ function myFunction() {
 
 </body>
 </html>
-
